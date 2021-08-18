@@ -22,4 +22,28 @@ public class AccessModifierDemo {
 		System.out.println("This is private method");
 	}
 	
+	public AccessModifierDemo () {
+		System.out.println("This is public constructor");
+	}
+	
+	void AccessModifierDemoin (int a){
+		System.out.println("this is default constructor");
+	}
+	
+	protected AccessModifierDemo (String s) {
+		System.out.println("this is protected constructor");
+	}
+	
+	private AccessModifierDemo(int a, int b) {
+		System.out.println("This is private constructor");
+	}
+	
+	public static void main(String[] args) {
+		AccessModifierDemo ob = new AccessModifierDemo (4, 5);
+		ob.privateMethod();
+		ob.defaultMethod();
+		ob.protectedMethod();
+		ob.publicMethod();
+	}
 }
+
