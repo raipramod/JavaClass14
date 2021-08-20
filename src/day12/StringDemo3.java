@@ -24,6 +24,8 @@ public class StringDemo3 {
 		System.out.println(s2);
 		System.out.println(s2.trim());
 		
+		
+		
 	}
 
 }
