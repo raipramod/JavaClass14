@@ -14,6 +14,42 @@ public class FacebookTest {
 			
 		});
 
+		Thread user2 = new Thread (new Runnable(){
+			@Override
+			public void run() {
+				fb.incrementLikes();
+			}
+			
+			
+		});
+
+		Thread user3 = new Thread (new Runnable(){
+			@Override
+			public void run() {
+				fb.incrementLikes();
+			}
+			
+			Thread user4 = new Thread (new Runnable(){
+				@Override
+				public void run() {
+					fb.incrementLikes();
+				}
+				
+				
+			});
+
+			
+			
+		});
+		
+		user1.start();
+		user2.start();
+		user3.start();
+		//user4.start();
+		//user4.start();
+		
+		
+
 	}
 
 }
